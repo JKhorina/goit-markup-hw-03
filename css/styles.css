@@ -13,10 +13,31 @@
  --button-color: #F5F4FA;
  --button-active-color: #2196F3;
  --button-text-active-color: #FFFFFF;
+ --footer-contact-color: rgba(255, 255, 255, 0.6);
+ --border-header-color: #ECECEC;
+ --section-color: #F5F4FA;
+ --background-command-card-color: #FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 p, h1, h2, h3, h4, h5,h6 {
-    margin: 0%;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -31,23 +52,33 @@ body {
 
 .container {
     width: 1200px;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
 .btn {
+    padding: 0;
     font-family: inherit;
     cursor: pointer;
     border-style: none;
+    display: block;
+}
+
+.address {
+    font-style: normal;
 }
 
 .secondary-title {
@@ -58,12 +89,19 @@ body {
     color: var(--accent-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* ----------------------Header----------------------- */
 
 .menu-header {
     padding-top: 24px;
     padding-bottom: 25px;
-}
+    border-bottom: 1px solid var(--border-header-color);
+;
+    }
 
 .header-container {
     display: flex;
@@ -147,24 +185,25 @@ body {
     margin-left: 50px;
 }
 
-.address {
-    font-style: normal;
-}
+
 
 
 
 /* ------------------Hero-------------------- */
 .section-hero {
     background-color: var(--background-color);
-}
-
-.hero-container {
-    display: flex;
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
+/*.hero-container {
+    
+}*/
+
 .hero-title {
+    width: 696px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -174,13 +213,15 @@ body {
     color: var(--primary-title-hero-color);
 }
 
-.btn-hero {
+/*.btn-hero {
     
-}
+}*/
 
 .btn-hero {
-    width: 200px;
+    min-width: 200px;
     min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -205,6 +246,27 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
+    margin-bottom: 50px;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.list-spesial {
+    display: flex;
+}
+
+.list-spesial-text {
+    width: 270px;
+}
+
+.list-spesial-text:not(:last-child) {
+    margin-right: 30px;
 }
 
 .secondary-title {
@@ -218,6 +280,7 @@ body {
     line-height: 1.4;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .special-text-description {
@@ -226,12 +289,40 @@ body {
     letter-spacing: 0.03em;
 }
 
+.list-works {
+    display: flex;
+}
+
+.list-works-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.container-command {
+    background-color: var(--section-color);
+}
+
+.list-command {
+    display: flex;
+}
+
+.list-command-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.list-command-card {
+    background-color: var(--background-command-card-color);
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 30px;
+}
+
 .secondary-title-command {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .text-description-command {
@@ -239,7 +330,7 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
-}
+    }
 /*-----------------Portfolio-------------*/
 
 .portfolio-btn {    
@@ -274,6 +365,8 @@ letter-spacing: 0.03em;
 /*-----------------------Footer--------------------*/
 .footer {
     background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -296,12 +389,12 @@ letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-contact-color);
 }
 
 .footer-contact-tel {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-contact-color);
 }
