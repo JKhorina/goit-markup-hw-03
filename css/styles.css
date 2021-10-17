@@ -127,6 +127,7 @@ body {
 }
 
 .logo-header {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 26px;
@@ -197,9 +198,9 @@ body {
     text-align: center;
 }
 
-/*.hero-container {
-    
-}*/
+.hero-container {
+    display: flex;
+    }
 
 .hero-title {
     width: 696px;
@@ -257,15 +258,15 @@ body {
     margin: -1px;
 }
 
-.list-spesial {
+.list-special {
     display: flex;
 }
 
-.list-spesial-text {
+.list-special-text {
     width: 270px;
 }
 
-.list-spesial-text:not(:last-child) {
+.list-special-text:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -289,6 +290,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.section-works {
+    padding-top: 0;
+}
+
 .list-works {
     display: flex;
 }
@@ -297,7 +302,7 @@ body {
     margin-right: 30px;
 }
 
-.container-command {
+.section-command {
     background-color: var(--section-color);
 }
 
@@ -312,6 +317,10 @@ body {
 .list-command-card {
     background-color: var(--background-command-card-color);
     border-radius: 0 0 4px 4px;
+}
+
+.list-command-card-description {
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -321,9 +330,7 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
+    }
 
 .text-description-command {
     font-size: 16px;
@@ -333,7 +340,18 @@ body {
     }
 /*-----------------Portfolio-------------*/
 
-.portfolio-btn {    
+.filter-button-container {
+    margin-bottom: 50px;
+}
+
+.filter-button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-button {
+    padding: 6px 22px;    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -343,10 +361,34 @@ body {
     color: var(--secondary-title-color);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.filter-button-item:not(:last-child) {
+    margin-right: 8px;
+}
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--button-active-color);
     color: var(--button-text-active-color);
+}
+
+.filter-cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+
+.filter-cards-item {
+    width: calc((100% - 30px*3) / 3);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: var(--background-command-card-color);
+}
+
+.filter-cards-item-description {
+    padding: 20px 0 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .filter-title-text {
@@ -370,6 +412,8 @@ letter-spacing: 0.03em;
 }
 
 .logo-footer {
+    display: block;
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -379,6 +423,7 @@ letter-spacing: 0.03em;
 }
 
 .address-text {
+    margin-bottom: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
