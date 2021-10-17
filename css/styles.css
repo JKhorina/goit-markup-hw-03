@@ -359,6 +359,7 @@ body {
     letter-spacing: 0.03em;
     background-color: var(--button-color);
     color: var(--secondary-title-color);
+    border-radius: 4px;
 }
 
 .filter-button-item:not(:last-child) {
