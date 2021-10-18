@@ -177,11 +177,6 @@ body {
     color: var(--accent-color);
 }
 
-.header-contact-tel:hover,
-.header-contact-tel:focus {
-    color: var(--accent-color);
-}
-
 .header-contacts-item:not(:first-child) {
     margin-left: 50px;
 }
@@ -195,15 +190,16 @@ body {
     background-color: var(--background-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
 }
 
 .hero-container {
-    display: flex;
-    }
+    text-align: center;
+        }
 
 .hero-title {
     width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -214,11 +210,9 @@ body {
     color: var(--primary-title-hero-color);
 }
 
-/*.btn-hero {
-    
-}*/
-
 .btn-hero {
+    display: block;
+    margin: 0 auto;
     min-width: 200px;
     min-height: 50px;
     padding-top: 10px;
@@ -238,7 +232,7 @@ body {
     background-color: var(--button-hero-hover-color);
 }
 
-/*-----------------------Content--------------------*/
+/*-----------------------Special--------------------*/
 
 .section-title {
     font-weight: 700;
@@ -290,6 +284,8 @@ body {
     letter-spacing: 0.03em;
 }
 
+/*-----------------------Works--------------------*/
+
 .section-works {
     padding-top: 0;
 }
@@ -301,6 +297,8 @@ body {
 .list-works-item:not(:last-child) {
     margin-right: 30px;
 }
+
+/*-----------------------Command--------------------*/
 
 .section-command {
     background-color: var(--section-color);
@@ -429,6 +427,10 @@ letter-spacing: 0.03em;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+}
+
+.footer-contact-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-contact-mail {
