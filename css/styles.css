@@ -177,12 +177,14 @@ body {
     color: var(--accent-color);
 }
 
+.header-contact-tel:hover,
+.header-contact-tel:focus {
+    color: var(--accent-color);
+}
+
 .header-contacts-item:not(:first-child) {
     margin-left: 50px;
 }
-
-
-
 
 
 /* ------------------Hero-------------------- */
